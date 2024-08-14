@@ -13,9 +13,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 FROM nginx:alpine-slim
-
-LABEL maintainer="Jones MAGLOIRE @Joxit"
-
+MAINTAINER miralcemie
 WORKDIR /usr/share/nginx/html/
 
 ENV NGINX_PROXY_HEADER_Host '$http_host'
